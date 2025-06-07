@@ -107,7 +107,7 @@ def main():
         print(f"Answer: {answer}")
         text_to_speech(f"The answer is: {answer}")
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Disable GPU usage and oneDNN optimizations
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
     os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
